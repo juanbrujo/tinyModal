@@ -1,7 +1,7 @@
 {
 	"name": "tinyModal",
 	"title": "Tiny Modal",
-	"homepage": "https://github.com/i2btech/tinyModal",
+	"homepage": "https://github.com/juanbrujo/tinyModal",
 	"description": "",
 	"demo": "",
 	"keywords": [
@@ -10,7 +10,7 @@
 		"modal",
 		"window"
 	],
-	"version": "0.1",
+	"version": "0.0.1",
 	"author": {
 		"name": "Jorge Epuñan",
 		"url": "https://github.com/juanbrujo",
@@ -23,7 +23,7 @@
 			"copyright": "2015"
 		}
 	],
-	"bugs": "https://github.com/i2btech/tinyModal/issues",
-	"docs": "https://github.com/i2btech/tinyModal#readme",
-	"download": "https://github.com/i2btech/tinyModal/archive/master.zip"
+	"bugs": "https://github.com/juanbrujo/tinyModal/issues",
+	"docs": "https://github.com/juanbrujo/tinyModal#readme",
+	"download": "https://github.com/juanbrujo/tinyModal/archive/master.zip"
 }

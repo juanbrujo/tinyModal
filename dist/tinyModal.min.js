@@ -1,8 +1,8 @@
 /*
- *  Tiny Modal - v0.1
+ *  Tiny Modal - v0.0.1
  *  
  *
- *  https://github.com/i2btech/tinyModal
+ *  https://github.com/juanbrujo/tinyModal
  *  Demo: 
  *
  *  Author: Jorge Epuñan |  @csslab

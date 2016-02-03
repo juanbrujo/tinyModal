@@ -35,11 +35,17 @@ Still not convinced? Check out this ↓ complete ↓ comparison ↓ table ↓
 
 ##Use
 
-
+TODO
 
 ##Design
 
+TO
+
 ##Demos
+
+[tinyModal demo](http://juanbrujo.github.io/tinyModal/)
+
 
 ##Bugs?
 
+[tinyModal issues](https://github.com/juanbrujo/tinyModal/issues)
