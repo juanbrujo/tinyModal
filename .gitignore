@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-#ignore this files when pushing to a GIT repository
 .DS_Store
-node_modules
-=======
+
 # Logs
 logs
 *.log
@@ -36,4 +33,5 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
->>>>>>> 53f11a48022581629081359f68f1e6831e09c39a
+
+.sass-cache
