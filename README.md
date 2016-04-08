@@ -16,34 +16,39 @@ But this one is **really** flexible. And only 2kb (min). And semantic-oriented (
 - IE8+ ✔
 - Total control of design and transition effects ✔✔
 - No need or jQuery or other library (Vanilla JS) ✔✔✔
-- Open Source ♺
+- Open Source 🌟
 
 
 Still not convinced? Check out this ↓ complete ↓ comparison ↓ table ↓
 
 |  | tinyModal | Lightbox | Fancybox 2 | Bootstrap's Modal.js |
 |--------------|------------|----------|------------|----------------------|
-| Weight | 2kb ✔ | 8kb | 23kb | 8kb |
-| Dependency | just some CSS ✔ | jQuery (+88kb) | jQuery (+88kb) | jQuery (+88kb) |
+| Size | 2kb ✔ | 8kb | 23kb | 8kb |
+| Dependency | just some CSS ✔ | jQuery (+88kb) | jQuery (+88kb) | jQuery (+88kb) + Bootstrap.js (30kb) |
 | Performance | smooth ✔ | heavy repaint | heavy repaint | good |
 | Design | your CSS ✔ | own | own | own |
 | Effects | your CSS3 ✔ | own | own | own |
 | Responsive | sure ✔ | nope | nope | yes |
-| Mobile-frieldly | yep ✔ | nope | nope | nope |
+| Mobile-friendly | yep ✔ | nope | nope | nope |
 | Conflict | none ✔ | probably | probably | probably |
 | Target | coders ✔ | newbies | newbies | newbies |
+
+##Demos
+
+[tinyModal demo](http://juanbrujo.github.io/tinyModal/)
+
+
 
 ##Use
 
 TODO
 
+
+
 ##Design
 
-TO
+TODO
 
-##Demos
-
-[tinyModal demo](http://juanbrujo.github.io/tinyModal/)
 
 
 ##Bugs?
