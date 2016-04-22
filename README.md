@@ -9,7 +9,7 @@ But this one is **really** flexible. And only 637 bytes of modular modal window 
 
 ##Demos
 
-[jQuery tinyModal demo](https://github.com/juanbrujo/tinyModal/tree/jquery/demo)
+[jQuery tinyModal demo](https://cdn.rawgit.com/juanbrujo/tinyModal/jquery/demo/index.html)
 
 
 
