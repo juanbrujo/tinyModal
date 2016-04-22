@@ -1,6 +1,6 @@
 {
-	"name": "tinyModal",
-	"title": "Tiny Modal",
+	"name": "jquery-tinyModal",
+	"title": "jQuery tinyModal",
 	"homepage": "https://github.com/juanbrujo/tinyModal",
 	"description": "",
 	"demo": "",
@@ -8,7 +8,8 @@
 		"javascript",
 		"plugin",
 		"modal",
-		"window"
+		"window",
+		"jquery"
 	],
 	"version": "0.0.1",
 	"author": {
@@ -20,7 +21,7 @@
 		{
 			"type": "MIT",
 			"url": "http://mit-license.org/",
-			"copyright": "2015"
+			"copyright": "2016"
 		}
 	],
 	"bugs": "https://github.com/juanbrujo/tinyModal/issues",

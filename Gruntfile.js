@@ -20,14 +20,14 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'dist/tinyModal.css': 'src/tinyModal.scss',
+					'dist/jquery.tinyModal.css': 'src/jquery.tinyModal.scss',
 				}
 			}
 		},
 		concat: {
 			dist: {
-				src: ["src/tinyModal.js"],
-				dest: "dist/tinyModal.js"
+				src: ["src/jquery.tinyModal.js"],
+				dest: "dist/jquery.tinyModal.js"
 			},
 			options: {
 				stripBanners: true,
@@ -35,15 +35,15 @@ module.exports = function(grunt) {
 			}
 		},
 		jshint: {
-			files: ["src/tinyModal.js"],
+			files: ["src/jquery.tinyModal.js"],
 			options: {
 				jshintrc: ".jshintrc"
 			}
 		},
 		uglify: {
 			my_target: {
-				src: ["src/tinyModal.js"],
-				dest: "dist/tinyModal.min.js"
+				src: ["src/jquery.tinyModal.js"],
+				dest: "dist/jquery.tinyModal.min.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks("grunt-contrib-sass");
+	grunt.loadNpmTasks("grunt-sass");
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-uglify");

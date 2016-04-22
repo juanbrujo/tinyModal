@@ -11,5 +11,6 @@
 	"smarttabs": true,
 	"trailing": true,
 	"unused": true,
-	"node": true
+	"node": true,
+	"quotmark": true
 }
