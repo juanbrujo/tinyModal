@@ -4,7 +4,7 @@
  */
 var tinyModal = (function(){
 
-	if (!document.querySelector || !('classList' in document.body)) {
+	if (!document.querySelector || !("classList" in document.body)) {
 		return false;
 	}
 
@@ -63,7 +63,7 @@ var tinyModal = (function(){
 	function getNewClass(element){
 		var newClass = element.dataset.newclass;
 		if(newClass) {
-			addClass(element, newClass)
+			addClass(element, newClass);
 		}
 	}
 

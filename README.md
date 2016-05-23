@@ -103,25 +103,24 @@ function closeModal() {
 }
 ```
 
-
 ## Design
 
 Base modal styles are included in `tinyModal.scss` but you should add your own styles. Base CSS clases for design are:
 
 ```css
-.tinymodal-cover {}
-.tinymodal-window {}
-.tinymodal-active {}
-.tinymodal-close {}
+.tinymodal-cover    {}
+.tinymodal-window   {}
+.tinymodal-active   {}
+.tinymodal-close    {}
 ```
 
 And the functional CSS clases are:
 
 ```css
-.tinymodal-ready 
-.tinymodal-active {}
-.tinymodal-window-open {}
-.tinymodal-ready {}
+.tinymodal-ready        {}
+.tinymodal-active       {}
+.tinymodal-window-open  {}
+.tinymodal-ready        {}
 ```
 
 
