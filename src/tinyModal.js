@@ -1,12 +1,12 @@
 /*!
- * tinyModal 
+ * tinyModal
  * ©2015 - Jorge Epuñan
  */
 var tinyModal = (function(){
 
 	if (!document.querySelector || !('classList' in document.body)) {
 		return false;
-  }
+	}
 
 	var container = document.body,
 			popup = document.querySelector(".tinymodal-window-open"),
@@ -28,13 +28,13 @@ var tinyModal = (function(){
 	function addCover(){
 		var newCover = document.createElement("div");
 		addClass(newCover,"tinymodal-cover");
-		document.body.appendChild(newCover); 
+		document.body.appendChild(newCover);
 	}
 	// remove cover
 	function removeCover(){
 		var actualCover = document.querySelector(".tinymodal-cover");
 		if( actualCover ) {
-			actualCover.remove(); 
+			actualCover.parentNode.removeChild(actualCover);
 		}
 	}
 	// deactivate on ESC key
@@ -115,11 +115,8 @@ var tinyModal = (function(){
 			popup = document.createElement("aside");
 			popup.setAttribute("class","tinymodal-window tinymodal-new");
 			popup.innerHTML = "<img src=\"" + selector + "\" />";
-			document.body.appendChild(popup); 
+			document.body.appendChild(popup);
 		}
-		//if(selector.dataset.newclass) {
-			//var newClass = selector.dataset.newclass;
-		//}
 		addClass(popup, "tinymodal-window-open");
 		activate("");
 		if(onOpen && typeof(onOpen) === "function"){

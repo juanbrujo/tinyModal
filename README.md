@@ -7,7 +7,7 @@ Clean, Fast, Modular and customizable **Modal Window** controller
 
 But this one is **really** flexible. And only 2kb (min). And semantic-oriented (content must be in the document).
 
-##Features
+## Features
 
 - Super fast ✔
 - Super lightweight ✔✔✔
@@ -33,24 +33,97 @@ Still not convinced? Check out this ↓ complete ↓ comparison ↓ table ↓
 | Conflict | none ✔ | probably | probably | probably |
 | Target | coders ✔ | newbies | newbies | newbies |
 
-##Demos
+## Demos
 
 [tinyModal demo](http://juanbrujo.github.io/tinyModal/)
 
 
 
-##Use
+## Use
 
-TODO
+- Add `tinymodal.css` and `tinymodal.js`.
+
+- Create as many modal windows as needed using the following markup and the `tinymodal-window` class:
+
+```html
+<aside id="first-modal" class="tinymodal-window">
+    ...
+    <button class="tinymodal-close">X</button>
+</aside>
+```
+
+- Then call the modal using a link and `tinymodal-modal` class:
+
+```javascript
+<a href="#first-modal" class="tinymodal-modal">Open first-modal</a>
+```
+
+- Apply the event handler to all links (or other selector):
+
+```
+var links = document.querySelectorAll('a.tinymodal-modal');
+
+for (var i = 0; links.length > i; i++) {
+  links[i].addEventListener("click", function(event){  // callback
+    event.preventDefault();
+    var element = this.getAttribute("href");
+    tinyModal.openModal(element, function(){
+      var closeLink = this.querySelectorAll('a[href="javascript:closeModal()"]');
+      if (closeLink.length < 1) {
+        var closeLink = document.createElement("a");
+        closeLink.setAttribute("href","javascript:closeModal()");
+        closeLink.innerHTML = "X";
+        this.appendChild(closeLink);
+      }
+    });
+  });
+}
+```
+
+- If needed, you can open modal windows using JavaScript and the onClick event:
+
+```html
+<button onclick="javascript:openModal();">Open #first-modal with JS</button>
+<button onclick="javascript:closeModal();">Close with JS</button>
+```
+
+```javascript
+function openModal() {
+    tinyModal.openModal("#first-modal", function(){ 
+        // callback
+        console.log('#first-modal opened'); 
+    });
+}
+
+function closeModal() {
+    tinyModal.closeModal(function(){  
+        // callback
+        console.log('closed by closeModal() function');
+    });
+}
+```
 
 
+## Design
 
-##Design
+Base modal styles are included in `tinyModal.scss` but you should add your own styles. Base CSS clases for design are:
 
-TODO
+```css
+.tinymodal-cover {}
+.tinymodal-window {}
+.tinymodal-active {}
+.tinymodal-close {}
+```
+
+And the functional CSS clases are:
+
+```.tinymodal-ready 
+.tinymodal-active {}
+.tinymodal-window-open {}
+.tinymodal-ready {}
+```
 
 
-
-##Bugs?
+## Bugs?
 
 [tinyModal issues](https://github.com/juanbrujo/tinyModal/issues)

@@ -1,19 +1,23 @@
 /*
- *  Tiny Modal - v0.0.1
- *  
+ *  Tiny Modal - v0.0.2
+ *  Clean, Fast, Modular and customizable Modal Window controller.
  *
  *  https://github.com/juanbrujo/tinyModal
- *  Demo: 
+ *  Demo: http://juanbrujo.github.io/tinyModal/
  *
  *  Author: Jorge Epuñan |  @csslab
  *  License: MIT
  *  2015
  */
+/*!
+ * tinyModal
+ * ©2015 - Jorge Epuñan
+ */
 var tinyModal = (function(){
 
 	if (!document.querySelector || !('classList' in document.body)) {
 		return false;
-  }
+	}
 
 	var container = document.body,
 			popup = document.querySelector(".tinymodal-window-open"),
@@ -26,19 +30,23 @@ var tinyModal = (function(){
 		element.className = element.className.replace(/\s+$/gi,"") + " " + name;
 	}
 	function removeClass(element,name) {
-		element.className = element.className.replace(name, "");
+		if( element ) {
+			element.className = element.className.replace(name, "");
+		}
 	}
 
 	// add cover
 	function addCover(){
 		var newCover = document.createElement("div");
 		addClass(newCover,"tinymodal-cover");
-		document.body.appendChild(newCover); 
+		document.body.appendChild(newCover);
 	}
 	// remove cover
 	function removeCover(){
 		var actualCover = document.querySelector(".tinymodal-cover");
-		actualCover.remove(); 
+		if( actualCover ) {
+			actualCover.parentNode.removeChild(actualCover);
+		}
 	}
 	// deactivate on ESC key
 	function onEscKey(event) {
@@ -101,10 +109,12 @@ var tinyModal = (function(){
 		removeCover();
 		removeClass(container, "tinymodal-active");
 		removeClass(popup, "tinymodal-window-open");
-		if(popup.classList.contains("tinymodal-new")) {
-			setTimeout(function(){
-				popup.parentNode.removeChild(popup);
-			}, 300);
+		if(popup) {
+			if(popup.classList.contains("tinymodal-new")) {
+				setTimeout(function(){
+					popup.parentNode.removeChild(popup);
+				}, 300);
+			}
 		}
 	}
 
@@ -116,11 +126,8 @@ var tinyModal = (function(){
 			popup = document.createElement("aside");
 			popup.setAttribute("class","tinymodal-window tinymodal-new");
 			popup.innerHTML = "<img src=\"" + selector + "\" />";
-			document.body.appendChild(popup); 
+			document.body.appendChild(popup);
 		}
-		//if(selector.dataset.newclass) {
-			//var newClass = selector.dataset.newclass;
-		//}
 		addClass(popup, "tinymodal-window-open");
 		activate("");
 		if(onOpen && typeof(onOpen) === "function"){
