@@ -10,6 +10,6 @@
     "grunt-sass": "^1.2.0"
   },
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt testjs --verbose"
   }
 }
