@@ -60,7 +60,7 @@ Still not convinced? Check out this ↓ complete ↓ comparison ↓ table ↓
 
 - Apply the event handler to all links (or other selector):
 
-```
+```javascript
 var links = document.querySelectorAll('a.tinymodal-modal');
 
 for (var i = 0; links.length > i; i++) {
@@ -117,7 +117,8 @@ Base modal styles are included in `tinyModal.scss` but you should add your own s
 
 And the functional CSS clases are:
 
-```.tinymodal-ready 
+```css
+.tinymodal-ready 
 .tinymodal-active {}
 .tinymodal-window-open {}
 .tinymodal-ready {}
