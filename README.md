@@ -1,6 +1,9 @@
 tinyModal.js
 ===
 
+
+![Travis CI](https://api.travis-ci.org/juanbrujo/tinyModal.svg)
+
 Clean, Fast, Modular and customizable **Modal Window** controller
 
 *What? Another one?*
@@ -41,7 +44,7 @@ Still not convinced? Check out this ↓ complete ↓ comparison ↓ table ↓
 
 ## Use
 
-- Add `tinymodal.css` and `tinymodal.js`.
+- Add `tinyModal.css` and `tinyModal.js` to your pages/templates.
 
 - Create as many modal windows as needed using the following markup and the `tinymodal-window` class:
 
