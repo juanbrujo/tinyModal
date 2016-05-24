@@ -15,7 +15,7 @@
  */
 var tinyModal = (function(){
 
-	if (!document.querySelector || !('classList' in document.body)) {
+	if (!document.querySelector || !("classList" in document.body)) {
 		return false;
 	}
 
@@ -63,7 +63,7 @@ var tinyModal = (function(){
 
 	// get and set modal size by data-size
 	function getSize(element){
-		var size = element.dataset.size;
+		var size = element.getAttribute("data-size");
 		if(size) {
 			var sizes = size.split(",");
 			element.setAttribute("style", "width:" + sizes[0] + ";height:" + sizes[1] + ";");
@@ -72,9 +72,9 @@ var tinyModal = (function(){
 
 	// get and set modal class if available, by data-classname
 	function getNewClass(element){
-		var newClass = element.dataset.newclass;
+		var newClass = element.getAttribute("data-newclass");
 		if(newClass) {
-			addClass(element, newClass)
+			addClass(element, newClass);
 		}
 	}
 
