@@ -15,7 +15,7 @@
  */
 var tinyModal = (function(){
 
-	if (!document.querySelector || !("classList" in document.body)) {
+	if (!document.querySelector || !("className" in document.body)) {
 		return false;
 	}
 
