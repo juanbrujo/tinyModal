@@ -1,5 +1,5 @@
-/*! 
- * Base Functionalities 
+/*!
+ * Base Functionalities
  * whitouth this tinyModal probably won't work as spected
 **/
 .tinymodal-cover {
@@ -22,6 +22,12 @@
 	z-index: 2;
 }
 
+.tinymodal-inner {
+	position: relative;
+	height: 100%;
+	overflow-y: auto; // if modal height is lower than inner content, add a scrollbar
+}
+
 .tinymodal-active {
 
 	.tinymodal-cover {
@@ -34,8 +40,8 @@
 	}
 }
 
-/*! 
- * Base Design 
+/*!
+ * Base Design
  * can be overriden by your own styles in this or your stylesheed
 **/
 .tinymodal-cover {
@@ -52,7 +58,7 @@
 }
 
 .tinymodal-active {
-	
+
 	.tinymodal-window-open {
 		transform: translate(-50%,-50%) scale(1);
 	}
@@ -60,6 +66,9 @@
 
 .tinymodal-window-open .tinymodal-close,
 .tinymodal-window-open button {
+	position: absolute;
+	top: 0;
+	right: 0;
 	background-color: #91cd85;
 }
 

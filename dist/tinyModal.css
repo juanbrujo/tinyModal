@@ -1,5 +1,5 @@
-/*! 
- * Base Functionalities 
+/*!
+ * Base Functionalities
  * whitouth this tinyModal probably won't work as spected
 **/
 .tinymodal-cover {
@@ -20,6 +20,11 @@
   opacity: 0;
   z-index: 2; }
 
+.tinymodal-inner {
+  position: relative;
+  height: 100%;
+  overflow-y: auto; }
+
 .tinymodal-active .tinymodal-cover {
   visibility: visible;
   opacity: 1; }
@@ -28,8 +33,8 @@
   visibility: visible;
   opacity: 1; }
 
-/*! 
- * Base Design 
+/*!
+ * Base Design
  * can be overriden by your own styles in this or your stylesheed
 **/
 .tinymodal-cover {
@@ -48,6 +53,9 @@
 
 .tinymodal-window-open .tinymodal-close,
 .tinymodal-window-open button {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: #91cd85; }
 
 .tinymodal-ready .tinymodal-window,

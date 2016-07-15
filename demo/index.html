@@ -14,19 +14,25 @@
 <body>
 
 	<aside id="first-modal" class="tinymodal-window">
-		<h2>:D</h2>
-		<p>
-			ESC or click outside to close the modal.
-		</p>
-		<button class="tinymodal-close">Close</button> <button onclick="javascript:closeModal();">Close with JS</button>
+		<div class="tinymodal-inner">
+			<h2>:D</h2>
+			<p>
+				ESC or click outside to close the modal.
+			</p>
+			<button class="tinymodal-close">Close</button> <button onclick="javascript:closeModal();">Close with JS</button>
+		</div>
 	</aside>
 
-	<aside id="second-modal" class="tinymodal-window" data-size="70%,300px" data-newclass="photo">
-		<h2>That's a completely different popup</h2>
-		<p>
-			ESC or click outside to close the modal.
-		</p>
-		<button class="tinymodal-close">X</button>
+	<aside id="second-modal" class="tinymodal-window" data-size="70%,50%" data-newclass="photo">
+		<div class="tinymodal-inner">
+			<h2>That's a completely different popup</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta blanditiis fuga animi reiciendis excepturi perspiciatis labore suscipit iure possimus odit, adipisci, illo eos est. Consequuntur natus cupiditate beatae enim a.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem non placeat maiores, minima ad, distinctio dolor et possimus atque eligendi nulla reprehenderit nostrum cum culpa molestiae voluptate quas cumque consectetur!</p>
+			<p>
+				ESC or click outside to close the modal.
+			</p>
+			<button class="tinymodal-close">X</button>
+		</div>
 	</aside>
 
 	<article>
@@ -55,7 +61,7 @@
 	<script>
 		function openModal() {
 			tinyModal.openModal("#first-modal", function(){ // callback
-				console.log('#first-modal open'); 
+				console.log('#first-modal open');
 			});
 		}
 		function openSecondModal() {

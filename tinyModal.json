@@ -10,7 +10,7 @@
 		"modal",
 		"window"
 	],
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"author": {
 		"name": "Jorge Epuñan",
 		"url": "https://github.com/juanbrujo",
@@ -19,8 +19,7 @@
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "http://mit-license.org/",
-			"copyright": "2015"
+			"url": "http://mit-license.org/"
 		}
 	],
 	"bugs": "https://github.com/juanbrujo/tinyModal/issues",
