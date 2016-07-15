@@ -51,8 +51,10 @@ Still not convinced? Check out this ↓ complete ↓ comparison ↓ table ↓
 
 ```html
 <aside id="first-modal" class="tinymodal-window">
-    ...
-    <button class="tinymodal-close">X</button>
+	<div class="tinymodal-inner">
+    	...
+    	<button class="tinymodal-close">X</button>
+    </div>
 </aside>
 ```
 
