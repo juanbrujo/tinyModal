@@ -15,10 +15,10 @@ var tinyModal = (function(){
 	container.className = container.className.replace(/\s+$/gi, "") + " tinymodal-ready";
 
 	// utils
-	function addClass(element,name) {
+	function addClass(element, name) {
 		element.className = element.className.replace(/\s+$/gi,"") + " " + name;
 	}
-	function removeClass(element,name) {
+	function removeClass(element, name) {
 		if( element ) {
 			element.className = element.className.replace(name, "");
 		}
@@ -108,10 +108,10 @@ var tinyModal = (function(){
 	}
 
 	// openModal public method, w/ onOpen callback
-	function openModal(selector,onOpen){
+	function openModal(selector, onOpen){
 		if (selector.indexOf("#") > -1) {
 			popup = document.querySelector(selector);
-		} else if (selector.indexOf(".jpg") > -1 || selector.indexOf(".JPG") > -1 || selector.indexOf(".png") > -1 || selector.indexOf(".PNG") > -1 || selector.indexOf(".gif") > -1 || selector.indexOf(".GIF") > -1) {
+		} else if (selector.match(/[.jpg|.JPG|.png|.PNG|.gif|.GIF]/)) {
 			popup = document.createElement("aside");
 			popup.setAttribute("class","tinymodal-window tinymodal-new");
 			popup.innerHTML = "<div class=\"tinymodal-inner\"><img src=\"" + selector + "\" /></div>";

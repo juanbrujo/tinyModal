@@ -129,6 +129,18 @@ And the functional CSS clases are:
 .tinymodal-ready        {}
 ```
 
+## Developing
+
+Need to change anything?
+
+```
+$ git clone 	https://github.com/juanbrujo/tinyModal.git
+$ npm install
+$ grunt // build
+$ grunt watch // develop
+$ grunt testjs // jshint test
+```
+
 
 ## Bugs?
 
