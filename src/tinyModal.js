@@ -15,10 +15,10 @@ var tinyModal = (function(){
 	container.className = container.className.replace(/\s+$/gi, "") + " tinymodal-ready";
 
 	// utils
-	function addClass(element,name) {
+	function addClass(element, name) {
 		element.className = element.className.replace(/\s+$/gi,"") + " " + name;
 	}
-	function removeClass(element,name) {
+	function removeClass(element, name) {
 		if( element ) {
 			element.className = element.className.replace(name, "");
 		}
@@ -108,7 +108,7 @@ var tinyModal = (function(){
 	}
 
 	// openModal public method, w/ onOpen callback
-	function openModal(selector,onOpen){
+	function openModal(selector, onOpen){
 		if (selector.indexOf("#") > -1) {
 			popup = document.querySelector(selector);
 		} else if (selector.match(/[.jpg|.JPG|.png|.PNG|.gif|.GIF]/)) {
