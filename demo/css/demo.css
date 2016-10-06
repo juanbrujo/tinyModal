@@ -1,10 +1,5 @@
-html,
 body {
-/*	height: 100%;*/
-}
-
-body {
-	color: #fff;
+  color: #fff;
   background-color: #155799;
   background-image: linear-gradient(120deg, #155799, #159957);
   background-position: fixed;
@@ -12,47 +7,47 @@ body {
 }
 
 article {
-	position: relative;
-	padding: 20px;
-	max-width: 800px;
-	margin: auto;
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 h1 {
-	font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 h2 {
-	font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 blockquote {
-	font-family: monospace;
-	font-size: 1.2em;
-	border: 1px solid rgba(255, 255, 255, .2);
-	padding: 1em;
+  font-family: monospace;
+  font-size: 1.2em;
+  border: 1px solid rgba(255, 255, 255, .2);
+  padding: 1em;
 }
 
 p {
-	margin: 10px 0;
-	font-size: 1em;
-	line-height: 1.4;
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
-	.center {
-		text-align: center;
-	}
+.center {
+  text-align: center;
+}
 
 a {
-	color: #91cd85;
-	transition: 0.2s color ease;
+  color: #91cd85;
+  transition: 0.2s color ease;
 }
-	a:hover {
-		color: #fff;
-	}
+  a:hover {
+    color: #fff;
+  }
 
 button {
-	display: inline-block;
+  display: inline-block;
   margin-bottom: 1em;
   padding: .5em .75em;
   color: rgba(255, 255, 255, .7);
@@ -63,14 +58,20 @@ button {
   cursor: pointer;
   transition: .2s;
 }
-	button:hover {
-		color: rgba(255, 255, 255, .8);
-	  background-color: rgba(255, 255, 255, .2);
-	  border-color: rgba(255, 255, 255, .3);
-	}
-	button:active {
-		background: #91cd85;
-	}
-	button+button {
-		margin-left: 1em;
-	}
+  button:hover {
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .2);
+    border-color: rgba(255, 255, 255, .3);
+  }
+  button:active {
+    background: #91cd85;
+  }
+  button+button {
+    margin-left: 1em;
+  }
+
+.tinymodal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
