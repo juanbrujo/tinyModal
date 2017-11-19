@@ -11,6 +11,8 @@ Clean, Fast, Modular and customizable **Modal Window** controller
 
 But this one is **really** flexible. And only 2kb (min). And semantic-oriented (content must be in the document).
 
+![tinyModal](https://i.imgur.com/oxvQHsh.gif)
+
 ## Features
 
 - Super fast ✔
