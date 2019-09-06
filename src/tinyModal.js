@@ -111,7 +111,7 @@ var tinyModal = (function(){
 	function openModal(selector, onOpen){
 		if (selector.indexOf("#") > -1) {
 			popup = document.querySelector(selector);
-		} else if (selector.match(/[.jpg|.JPG|.png|.PNG|.gif|.GIF]/)) {
+		} else if (selector.match(/.*(\.(jpg|png|gif))$/i)) {
 			popup = document.createElement("aside");
 			popup.setAttribute("class","tinymodal-window tinymodal-new");
 			popup.innerHTML = "<div class=\"tinymodal-inner\"><img src=\"" + selector + "\" /></div>";
