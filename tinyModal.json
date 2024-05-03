@@ -2,7 +2,7 @@
 	"name": "tinyModal",
 	"title": "Tiny Modal",
 	"homepage": "https://github.com/juanbrujo/tinyModal",
-	"description": "Clean, Fast, Modular and customizable Modal Window controller.",
+	"description": "Clean, Fast, Modular and customizable Modal Window controller",
 	"demo": "http://juanbrujo.github.io/tinyModal/",
 	"keywords": [
 		"javascript",
@@ -10,7 +10,7 @@
 		"modal",
 		"window"
 	],
-	"version": "0.1.0",
+	"version": "1.1.0",
 	"author": {
 		"name": "Jorge Epuñan",
 		"url": "https://github.com/juanbrujo",

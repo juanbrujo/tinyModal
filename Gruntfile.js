@@ -9,21 +9,23 @@ module.exports = function(grunt) {
 				" *  <%= pkg.homepage %>\n" +
 				" *  Demo: <%= pkg.demo %>\n" +
 				" *\n" +
-				" *  Author: <%= pkg.author.name %> |  <%= pkg.author.twitter %>\n" +
+				" *  Author: <%= pkg.author.name %> | <%= pkg.author.twitter %>\n" +
 				" *  License: <%= pkg.licenses[0].type %>\n" +
 				" *  <%= pkg.licenses[0].copyright %>\n" +
 				" */\n"
 		},
 		sass: {
-			dist: {
-				options: {
-					style: 'compressed'
-				},
-				files: {
-					'dist/tinyModal.css': 'src/tinyModal.scss',
-				}
-			}
-		},
+			options: {      
+        sass: {
+          sourceMap: true
+        }
+      },
+      main: {       
+        files: {
+          "dist/tinyModal.css": "src/tinyModal.scss"
+        }
+      }     
+    },
 		concat: {
 			dist: {
 				src: ["src/tinyModal.js"],
@@ -71,7 +73,7 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks("grunt-sass");
+	grunt.loadNpmTasks("grunt-sass-scss");
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-uglify");

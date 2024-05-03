@@ -1,6 +1,6 @@
 /*!
- * Base Functionalities
- * whitouth this tinyModal probably won't work as spected
+ * Base styles
+ * whitout this tinyModal probably won't work as expected
 **/
 .tinymodal-cover {
   position: fixed;
@@ -10,7 +10,8 @@
   left: 0;
   z-index: 1;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .tinymodal-window {
   position: fixed;
@@ -18,27 +19,31 @@
   top: 50%;
   visibility: hidden;
   opacity: 0;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .tinymodal-inner {
   position: relative;
   height: 100%;
-  overflow-y: auto; }
+  overflow-y: auto;
+}
 
 .tinymodal-active .tinymodal-cover {
   visibility: visible;
-  opacity: 1; }
-
+  opacity: 1;
+}
 .tinymodal-active .tinymodal-window-open {
   visibility: visible;
-  opacity: 1; }
+  opacity: 1;
+}
 
 /*!
  * Base Design
- * can be overriden by your own styles in this or your stylesheed
+ * can be overriden by your own styles in this or your own stylesheet
 **/
 .tinymodal-cover {
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .tinymodal-window {
   padding: 20px;
@@ -46,15 +51,21 @@
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
   border-radius: 3px;
   color: #333;
-  transform: translate(-50%, -50%) scale(0.9); }
+  transform: translate(-50%, -50%) scale(0.9);
+}
 
 .tinymodal-active .tinymodal-window-open {
-  transform: translate(-50%, -50%) scale(1); }
+  transform: translate(-50%, -50%) scale(1);
+}
 
 .tinymodal-window-open .tinymodal-close,
 .tinymodal-window-open button {
-  background-color: #91cd85; }
+  background-color: #91cd85;
+}
 
 .tinymodal-ready .tinymodal-window,
 .tinymodal-ready .tinymodal-cover {
-  transition: 0.3s all ease-in-out; }
+  transition: 0.3s all ease-in-out;
+}
+
+/*# sourceMappingURL=tinyModal.css.map */

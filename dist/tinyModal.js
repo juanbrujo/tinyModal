@@ -1,11 +1,11 @@
 /*
- *  Tiny Modal - v0.1.0
- *  Clean, Fast, Modular and customizable Modal Window controller.
+ *  Tiny Modal - v1.1.0
+ *  Clean, Fast, Modular and customizable Modal Window controller
  *
  *  https://github.com/juanbrujo/tinyModal
  *  Demo: http://juanbrujo.github.io/tinyModal/
  *
- *  Author: Jorge Epuñan |  @csslab
+ *  Author: Jorge Epuñan | @csslab
  *  License: MIT
  *  
  */
@@ -122,7 +122,7 @@ var tinyModal = (function(){
 	function openModal(selector, onOpen){
 		if (selector.indexOf("#") > -1) {
 			popup = document.querySelector(selector);
-		} else if (selector.match(/[.jpg|.JPG|.png|.PNG|.gif|.GIF]/)) {
+		} else if (selector.match(/.*(\.(jpg|png|gif))$/i)) {
 			popup = document.createElement("aside");
 			popup.setAttribute("class","tinymodal-window tinymodal-new");
 			popup.innerHTML = "<div class=\"tinymodal-inner\"><img src=\"" + selector + "\" /></div>";

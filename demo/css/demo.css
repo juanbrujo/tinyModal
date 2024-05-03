@@ -75,3 +75,7 @@ button {
   top: 0;
   right: 0;
 }
+
+.image-responsive {
+  max-width: 100%;
+}
