@@ -1,7 +1,3 @@
-/*!
- * tinyModal
- * ©2015 - Jorge Epuñan
- */
 var tinyModal = (function(){
 
 	if (!document.querySelector || !("className" in document.body)) {

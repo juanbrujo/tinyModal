@@ -12,14 +12,15 @@
 	],
 	"version": "1.1.0",
 	"author": {
-		"name": "Jorge Epuñan",
+		"name": "Jorge Epuñan H.",
 		"url": "https://github.com/juanbrujo",
 		"twitter": "@csslab"
 	},
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "http://mit-license.org/"
+			"url": "http://mit-license.org/",
+			"copyright": "©2015 - Jorge Epuñan H."
 		}
 	],
 	"bugs": "https://github.com/juanbrujo/tinyModal/issues",

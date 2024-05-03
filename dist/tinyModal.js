@@ -5,13 +5,9 @@
  *  https://github.com/juanbrujo/tinyModal
  *  Demo: http://juanbrujo.github.io/tinyModal/
  *
- *  Author: Jorge Epuñan | @csslab
+ *  Author: Jorge Epuñan H. | @csslab
  *  License: MIT
- *  
- */
-/*!
- * tinyModal
- * ©2015 - Jorge Epuñan
+ *  ©2015 - Jorge Epuñan H.
  */
 var tinyModal = (function(){
 
