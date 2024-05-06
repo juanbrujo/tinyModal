@@ -1,10 +1,6 @@
 tinyModal.js
 ===
 
-
-![Travis CI](https://api.travis-ci.org/juanbrujo/tinyModal.svg)
-![Lib size](https://badge-size.herokuapp.com/juanbrujo/tinyModal/master/dist/tinyModal.min.js)
-
 Clean, Fast, Modular and customizable **Modal Window** controller
 
 *What? Another one?*
